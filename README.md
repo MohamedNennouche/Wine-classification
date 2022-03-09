@@ -51,23 +51,25 @@ Cet enchaînement est fait sur le dataset winequality-white.csv mais est appliqu
 Etant un problème où les classes ne sont pas équilibrées donc la précision n'est pas un indicateur assez bon, et c'est pour cela qu'on opte pour le F1 score
 |   Algorithme choisi    |   Précision en test (%)    | F1 score (%) |
 |---    |:-:    | :-:    |
-|   KNN     |  58.03  |     |
-|   SVM   |   43.81    |        |
-|   Gradient Boosting   |     |     |
-|   Gaussian Processes    |       |     |
-|   Gaussian Naive Bayes   |      |     |
-|   Random Forrest   |      |       |
-|   MLP   |      |      |
+|   KNN     |  58.03  |   58.05  |
+|   SVM   |   43.81    |    30.04    |
+|   Gradient Boosting   |  62.65   |     |
+|   Gaussian Processes    |   57.96    |   57.98  |
+|   Gaussian Naive Bayes   |    45.1  |  44.11   |
+|   Random Forrest   |   68.03   |    67.34   |
+|   MLP   |   53.4   |   49.41   |
+|   Extremely randomized tree   |   68.44   |    67.36  |
 ### Après réduction de la dimensionnalité du problème
-|   Algorithme choisi    |   Précision en test|  F1 score (%)    |
+|   Algorithme choisi    |   Précision en test|  F1 score (%) |
 |---    |:-:    |:-:    |
-|   KNN     |  61.7  |      |
-|   SVM   |   53.61    |        |
-|   Gradient Boosting   |     |     |
-|   Gaussian Processes    |       |     |
-|   Gaussian Naive Bayes   |      |     |
-|   Random Forrest   |      |       |
-|   MLP   |      |      |
+|   KNN     |  61.7  |   61.69   |
+|   SVM   |   53.61    |    49    |
+|   Gradient Boosting   |   58.37  |     |
+|   Gaussian Processes    |    56.26   |   53.6  |
+|   Gaussian Naive Bayes   |   45.99   |   40.13  |
+|   Random Forrest   |   65.58   |    63.23   |
+|   MLP   |   57.55   |   57.95   |
+|   Extremely randomized tree   |   65.44   |   64.44   |
 ## Remarques
 ## Todo
 - [ ] Augmentation des données pour essayer d'améliorer la distribution des classes
