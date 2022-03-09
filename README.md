@@ -48,16 +48,26 @@ Ainsi que les packages suivant :
 Cet enchaînement est fait sur le dataset winequality-white.csv mais est appliquable de la même manière sur winequality-red.csv
 ## Performances atteintes
 ### Avec les caractéristiques de base
-|   Algorithme choisi    |   Précision en test (%)    |
-|---    |:-:    |
-|   KNN     |  58.03  |
-|   SVM   |   43.81    |
-|   Stochastic Gradient Descent   |     |
-|   Gaussian Processes    |       |
-|   Gaussian Naive Bayes   |      |
-|   Random Forrest   |      |
-|   MLP   |      |
+Etant un problème où les classes ne sont pas équilibrées donc la précision n'est pas un indicateur assez bon, et c'est pour cela qu'on opte pour le F1 score
+|   Algorithme choisi    |   Précision en test (%)    | F1 score (%) |
+|---    |:-:    | :-:    |
+|   KNN     |  58.03  |     |
+|   SVM   |   43.81    |        |
+|   Gradient Boosting   |     |     |
+|   Gaussian Processes    |       |     |
+|   Gaussian Naive Bayes   |      |     |
+|   Random Forrest   |      |       |
+|   MLP   |      |      |
 ### Après réduction de la dimensionnalité du problème
-
+|   Algorithme choisi    |   Précision en test|  F1 score (%)    |
+|---    |:-:    |:-:    |
+|   KNN     |  61.7  |      |
+|   SVM   |   53.61    |        |
+|   Gradient Boosting   |     |     |
+|   Gaussian Processes    |       |     |
+|   Gaussian Naive Bayes   |      |     |
+|   Random Forrest   |      |       |
+|   MLP   |      |      |
+## Remarques
 ## Todo
 - [ ] Augmentation des données pour essayer d'améliorer la distribution des classes
