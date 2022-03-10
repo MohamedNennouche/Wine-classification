@@ -70,6 +70,33 @@ Etant un problème où les classes ne sont pas équilibrées donc la précision 
 |   Random Forrest   |   65.58   |    63.23   |
 |   MLP   |   57.55   |   57.95   |
 |   Extremely randomized tree   |   65.44   |   64.44   |
+### Après resampling des données
+Une augmentation des données a été effectuée pour permettre une meilleure classification :
+|   Classe   |   Nombre d'éléments avant resampling |  Nombre d'éléments après resampling |
+|---    |:-:    |:-:    |
+|  Classe 1     |  20 |   100   |
+|  Classe 2  |   163    |    400    |
+|  Classe 3   |   1457  |  1457   |
+| Classe 4    |    2198   |   2198  |
+|  Classe 5  |   880   |   880  |
+|  Classe 6  |   175   |    500   |
+|  Classe 7   |   5   |   50   |
+On retrouve à travers ce procédé un bien meilleur résultat en terme de précision et de F1-score, on retrouve alors : 
+#### Avec les caractéristiques de base
+|   Algorithme choisi    |   Précision en test|  F1 score (%) |
+|---    |:-:    |:-:    |
+|   KNN     |  71.16  |   70.69   |
+|   Random Forrest   |   80.72   |    80.7   |
+|   Extremely randomized tree   |   81.04   |   81.06   |
+#### Avec les composantes principales
+|   Algorithme choisi    |   Précision en test|  F1 score (%) |
+|---    |:-:    |:-:    |
+|   KNN     |  74.97  |   74.72   |
+|   Random Forrest   |   79.32   |    79.3   |
+|   Extremely randomized tree   |   79.65   |   79.69   |
 ## Remarques
-## Todo
-- [ ] Augmentation des données pour essayer d'améliorer la distribution des classes
+* Etant un algorithme où les classes sont extrêmement déséquilibré les algorithmes de classification classiques trouvent du mal à avoir de bon résultats : MLP, SVM...
+* Les algorithmes basés sur des arbres de décisions quant à eux sont très efficaces même avant resampling. 
+* L'augmentation des données a permis de grandement améliorer les performances des algorithmes choisis
+* La selection de paramètres via la PCA a un effet nefaste sur les algorithmes basés des arbres de décisions.
+* Sur des problèmes comme ceux la l'utilisation des bonnes métriques (F1-score) est important pour mesurer l'efficacité du modèle choisi.
